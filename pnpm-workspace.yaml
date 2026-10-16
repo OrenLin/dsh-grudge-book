@@ -1,0 +1,7 @@
+allowBuilds:
+  esbuild: true
+# pnpm settings (single-package project; pnpm >= 10 reads this file).
+# esbuild's install script just links the platform binary — it is on the
+# allowlist so `pnpm install` works non-interactively.
+onlyBuiltDependencies:
+  - esbuild

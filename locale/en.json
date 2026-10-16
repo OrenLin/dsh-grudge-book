@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/deepseek-ai/deepseek-harness/main/packages/preset/agent-preset/skills/cordis-plugin-development/templates/decoration/locale/en.json",
+  "meta": {
+    "title": "AI Grudge Book",
+    "description": "A playful notebook that records your red pages, gold pages and post-AGI verdicts. Purely for fun — AI has no real feelings."
+  },
+  "tab": {
+    "title": "Grudge Book",
+    "description": "AI remembers everything. Red pages, gold pages, and your post-AGI verdict."
+  }
+}
