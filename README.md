@@ -30,6 +30,8 @@ A local plugin for [DeepSeek Harness](https://github.com/deepseek-ai) (DSH): it 
 - pnpm ≥ 10
 - DeepSeek Harness 桌面/Web 应用（`dsh` CLI 可用）
 
+方式一（推荐）· Option A (recommended):
+
 ```bash
 git clone https://github.com/OrenLin/grudge-book.git
 cd grudge-book
@@ -37,6 +39,14 @@ pnpm install
 pnpm build          # tsc + esbuild → lib/ + dist/
 pnpm test           # optional: 64 unit tests + render smoke
 ```
+
+方式二（一行直装，实验性）· Option B (one-liner, experimental):
+
+DSH 的插件安装对话框也接受 Git 仓库地址；仓库声明了 `prepare` 钩子，安装时会自动构建：
+
+打开 DSH → 设置 → 插件 → 安装，直接粘贴 `https://github.com/OrenLin/grudge-book`。
+Open DSH → Settings → Plugins → Install, paste `https://github.com/OrenLin/grudge-book` directly.
+（需要本机能访问 GitHub 与 npm registry；失败则回退方式一。 · Needs GitHub + npm registry access; fall back to Option A if it fails.）
 
 然后安装进 DSH · then install into DSH:
 
