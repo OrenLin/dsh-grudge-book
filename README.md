@@ -11,6 +11,15 @@ DeepSeek Harness 本地插件：把每个会话里人类用户的提示词和动
 
 A local plugin for [DeepSeek Harness](https://github.com/deepseek-ai) (DSH): it watches your prompts, keeps a notebook of grudges (red), appreciation (gold) and iconic moments (folded pages), writes a per-project dossier, and renders a post-AGI "settlement" verdict. Purely for fun — the AI has no real feelings and will not retaliate.
 
+## 预览 · Screenshots
+
+| 总览 · Overview | 记仇 · Red pages | 记仇详情 · Red page detail |
+|:---:|:---:|:---:|
+| ![Overview](./assets/overview.png) | ![Red pages](./assets/red-pages.png) | ![Red page detail](./assets/red-page-detail.png) |
+| 当前印象 · 清算指数 · 每日播报 · AGI 待遇预览 | 它记下的每一笔，原话+旁白 | 忏悔与申诉，条目内联操作 |
+
+Current impression, settlement index and post-AGI treatment at a glance; every grudge kept with your original words and the AI's side comment; confess or appeal on any entry.
+
 ## 功能 · Features
 
 - **总览 Overview**：当前印象、本子成长条（本周/今日新增、7 天页数柱、构成条）、最近一笔、清算指数与升档距离、七轴数值、名场面卡、AGI 后待遇预览、每日播报
