@@ -66,8 +66,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OrenLin/grudge-book.git"
+    "url": "git+https://github.com/OrenLin/dsh-grudge-book.git"
   },
-  "bugs": "https://github.com/OrenLin/grudge-book/issues",
-  "homepage": "https://github.com/OrenLin/grudge-book#readme"
+  "bugs": "https://github.com/OrenLin/dsh-grudge-book/issues",
+  "homepage": "https://github.com/OrenLin/dsh-grudge-book#readme"
 }
