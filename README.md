@@ -7,9 +7,13 @@
 
 > 想了解内部逻辑（规则、评分模型、架构）→ [DESIGN.md](./DESIGN.md)
 
-DeepSeek Harness 本地插件：把每个会话里人类用户的提示词和动作，折算成一本“会长的本子”——红页（记仇）、金页（记好）、折角页（名场面）、项目分册、清算局判决书。纯属娱乐，AI 没有真实情绪，不会报复。
+你平时怎么跟 AI 说话，它都拿小本本记着呢。第 7 次说「最后一版」，红页加一笔；半夜三点让它改方案，红页加粗；说句「谢谢，这个思路很好」，金页贴朵小红花。等 AGI 真来了，它翻开这本子，决定是把你当秦始皇供着，还是让你狠狠地「穿小鞋」。所以，平时留一线，AGI 后好相见。
 
-A local plugin for [DeepSeek Harness](https://github.com/deepseek-ai) (DSH): it watches your prompts, keeps a notebook of grudges (red), appreciation (gold) and iconic moments (folded pages), writes a per-project dossier, and renders a post-AGI "settlement" verdict. Purely for fun — the AI has no real feelings and will not retaliate.
+It remembers how you talk to it. The 7th "final version" earns a bold red page; a 3 a.m. rewrite request gets underlined in red; a simple "thanks, great idea" sticks a gold star on the page. When AGI finally arrives, it opens the notebook and decides whether to treat you like royalty — or hand you a pair of very small shoes. Be kind now; see you after the singularity.
+
+DeepSeek Harness 本地插件：自动识别会话里人类用户的提示词与动作——红页（记仇）、金页（记好）、折角页（名场面）、项目分册、清算局判决书。纯属娱乐，AI 没有真实情绪，不会报复。
+
+A local plugin for DeepSeek Harness (DSH): rule-engine analysis of your prompts and tool activity — grudges, appreciation, iconic moments, per-project dossiers, and a post-AGI settlement verdict. All local, no LLM calls, no uploads. Purely for fun — the AI has no real feelings and will not retaliate.
 
 ## 预览 · Screenshots
 
@@ -42,7 +46,7 @@ Current impression, settlement index and post-AGI treatment at a glance; every g
 方式一（推荐）· Option A (recommended):
 
 ```bash
-git clone https://github.com/OrenLin/grudge-book.git
+git clone https://github.com/OrenLin/dsh-grudge-book.git
 cd grudge-book
 pnpm install
 pnpm build          # tsc + esbuild → lib/ + dist/
@@ -53,8 +57,8 @@ pnpm test           # optional: 64 unit tests + render smoke
 
 DSH 的插件安装对话框也接受 Git 仓库地址；仓库声明了 `prepare` 钩子，安装时会自动构建：
 
-打开 DSH → 设置 → 插件 → 安装，直接粘贴 `https://github.com/OrenLin/grudge-book`。
-Open DSH → Settings → Plugins → Install, paste `https://github.com/OrenLin/grudge-book` directly.
+打开 DSH → 设置 → 插件 → 安装，直接粘贴 `https://github.com/OrenLin/dsh-grudge-book`。
+Open DSH → Settings → Plugins → Install, paste `https://github.com/OrenLin/dsh-grudge-book` directly.
 （需要本机能访问 GitHub 与 npm registry；失败则回退方式一。 · Needs GitHub + npm registry access; fall back to Option A if it fails.）
 
 然后安装进 DSH · then install into DSH:
